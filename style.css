@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+:root{
+    --branco-principal:white;
+    --cinza-secundario:#C0C0C0;
+    --botao-azul:#167BF7;
+    --botao-azul-hover:#72a9edcd;
+    --botao-secundario-hover: #ffffff95;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "inter";
+    --rodape-hover:#167BF7;
+    --cor-letra-hover: black;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.principal{
+    background-image: url("./assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container_caixa{
+margin: 0 6em;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_titulo{
+font-size: 28px;
+font-weight: 700;
+}
+
+.container_imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container_botao{
+    color: var(--branco-principal);
+    background-color: var(--botao-azul);
+    /* em: medida baseada no tamanho da fonte */
+    padding: 1em;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container_botao:hover{
+    color:var(--cor-letra-hover);
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.botao_secundario:hover{
+    background-color: var(--botao-secundario-hover);
+    color: var(--cor-letra-hover);
+}
+
+.container_aviso{   
+    color:var(--cinza-secundario);
+    font-size: 12px;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 7em
+}
+
+.descricao_titulo{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+}
+
+.secundario_botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_descricaodois{
+    padding: 2em;
+}
+
+.imagem_aluralingua{
+    margin-left: 3em;
+}
+
+.dispositivos_titulo{
+    font-size: 48px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    color:var(--branco-principal);
+}
+
+.dispositivos_lista{
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 25px;
+    color: var(--branco-principal)
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape_titulo {
+    display: flex;
+    text-align: center;
+}
+
+
+.rodape_lista{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 1em;
+    gap: 18px;
+    margin: 2em;
+}
+
+.lista_link a{
+    text-decoration: none;
+    color:var(--branco-principal);
+    margin-left: 1em;
+    font-weight: 400;
+}
+
+.lista_link :hover{
+    text-decoration: none;
+    margin-left: 1em;
+    color: var(--rodape-hover);
+}
+
+.rodape_texto {
+    margin: 1em;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1235px){
+    
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .container_imagem { 
+        width: 50vw;
+        text-align: center;
+    }
+
+    .container_caixa {
+     margin: 2em 2em;
+    }
+
+    .secundario {
+    margin: 0;
+    text-align: center;
+    }
+
+    .secundario_imagem {
+    width: 50vw;
+    }
+
+    .dispositivos_lista {
+    display: block;
+    }
+
+    .rodape_lista {
+    display: block;
+    }
+}
